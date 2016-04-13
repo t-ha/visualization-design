@@ -67,8 +67,8 @@ var data = [trace1, trace2, trace3];
 var layout = {
 	title: 'Effectiveness of Anitbiotics on 16 Bacteria',
 	autosize: true,
-	width: 1000,
-	height: 800,
+	width: 800,
+	height: 600,
 	xaxis: {
 		type: 'category',
 		title: 'Bacteria',
@@ -136,7 +136,7 @@ var gNeg = {
 };
 
 var gramLayout = {
-	title: 'Effectiveness of Anitbiotics in Relation to Gram Staining',
+	title: 'Overall Effectiveness of Anitbiotics in Relation to Gram Staining',
 	barmode: 'group',
 	xaxis: {
 		type: 'category',
@@ -154,6 +154,36 @@ var gramLayout = {
 Plotly.newPlot('graphTwo', [gPos, gNeg], gramLayout, {staticPlot: true});
 
 
+
+var com1 = {
+	x: drugS,
+	y: drugN,
+	marker: {
+		size: 10,
+		opacity: 0.5,
+		color: 'rgb(0, 55, 128)'
+	},
+	mode: 'markers',
+	type: 'scatter'
+};
+
+var comLayout = {
+	title: 'Streptomycin vs Neomycin MIC Comparison',
+	xaxis: {
+		type: 'log',
+		title: 'Streptomycin MIC',
+		autorange: true,
+		showline: true
+	},
+	yaxis: {
+		type: 'log',
+		title: 'Neomycin MIC',
+		autorange: true,
+		showline: true
+	}
+}
+
+Plotly.newPlot('graphThree', [com1], comLayout, {staticPlot: true});
 
 
 

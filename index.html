@@ -18,17 +18,38 @@
 
         <div class="content">
 
-            <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-
+            <h2 class="content-subhead">How effective is each antibiotic against each bacteria? Which antibiotic is the most effective overall?</h2>
             <div id="graph" class="graphs"></div>
+            <p>
+                I wanted to visually encode this data with a connected scatter plot. The scatter plot uses position of common scales to allow one to easily and accurately decode a point of data. The reason why I connected the points is to allow the viewer to even more easily follow one antibiotic's effectiveness against the 16 listed bacteria. The x-axis was left in alphabetical order for ease of readability and I used a log scale to accommodate for the large range of MIC values, particularly of Penicilin.
+            </p>
+            <p>
+            	I increased the width of the lines and scatter points for better visual clarity. When answering my second question of 'which antibiotic is the most effective overall' it is clear that Neomycin is most effective against more of the bacteria than Penicilin and Streptomycin are.
+            </p>
+            <p>
+            	This graph communicates some unintentional messages. The nature of connecting dots might make it seem to the reader that each line follows some sort of pattern when this is not the case. Because the x-axis is categorical and listed alphabetically, one should not expect to analzye a pattern from the lines of the graph. Any sort of linearity or curvature found must be ignored because it would be a wrong interpresentation of the the graph actually represents.
+            </p>
+            
             
             <h2 class="content-subhead">Is Penicilin more effective against one group of bacteria? Is Streptomycin? Neomycin?</h2>
             <div id="graphTwo"></div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            	Next, I wanted to see if a particular antibiotic was more/less effective against the two large groups of bacteria, Gram-positive and Gram-negative. I use a bar chart because of the simplicity and the readability of such low number of data. I took the sum of each Gram-positive/negative group in relation to its antibiotic over the 16 bacteria to calculate a "sum of effectiveness" for this dataset only. The bar chart allows the reader to identify the antibiotic with position along common scales and to use that same metric along with length and area to compare the MIC values of each antibiotic.
+            </p>
+            <p>
+            	I chose the purple color to identify Gram-positive bacteria and pink color to identify Gram-negative bacteria because those are the approximate colors that are shown after Gram Straining and if the reader has any prior knowledge to reading my page, they would be able to more accurately comprehend the information with contextual knowledge.
+            </p>
+            <p>
+            	The purpose of this graph was to make comparisons about each antibiotic and how effective they are against Gram-positive groups and Gram-negative groups of bacteria. My intentions for the graph were for the reader to only make three visual comparisons but I understand that they may also make comparisons between just the Gram-positive or Gram-negative bars. Although these additional interpretations are beyond what I planned for this graph, I don't see them as being a problem due to the nature of the bar graph and the fact that there are really only 6 points of data. If we had more antibiotics with closer data points then I might reconsider the visual encoding I use.
+            </p>
+
+            <h2 class="content-subhead">Are Streptomycin and Neomycin too similar?</h2>
+            <div id="graphThree"></div>
+            <p>
+            	For the last graph I wanted to see if Streptomycin and Neomycin were essentially the same or not in terms of effectiveness. I used a scatter plot to visually encode this data because it uses a common scale, but most importantly conveys direction of the points to the reader. If the reader saw a visually linear line, then they would be able to say that these two antibiotics are very similar in effectiveness against the 16 bacteria.
+            </p>
+            <p>
+            	By plotting each MIC value of Streptomycin and Neomycin against each other I'm allowing the reader to see any relationship between the points, if any. Again I used a log scale on both axis to accommodate for the range of values. I chose a darker blue with some transparency because two points were overlapping and this was the best way to show that there were two dots there. I did not connect the lines because these data points aren't representative of a function, meaning there can be more than one y-value for x-value, and connecting the lines wouldn't accurately portray the message I'm trying to communicate.
             </p>
         </div>
     </div>
